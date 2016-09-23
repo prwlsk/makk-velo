@@ -1,0 +1,1323 @@
+/*Общие стили*/
+
+body {
+  font-family: "Clear Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color:#2b2929;
+  padding:0;
+  margin:0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  z-index: 500;
+  display: none;
+}
+
+
+/*Верхняя шапка*/
+
+.top-header {
+  background-color: #f7f7f7;
+}
+
+.top-header-logo {
+  display: block;
+  width: 270px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 27px;
+  float: left;
+  cursor: pointer;
+}
+
+.top-header-nav {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 770px;
+  margin-left: 30px;
+}
+
+.top-header-nav li {
+  display: inline-block;
+  padding-top: 46px;
+  padding-left: 20px;
+  padding-bottom: 41px;
+  vertical-align: top;
+}
+
+.top-header-nav li:hover,
+.top-header-logo:hover {
+  background-color: #fff600;
+}
+
+.top-header-nav li:first-child {
+  padding-left: 107px;
+  padding-right: 100px;
+}
+.top-header-nav li a {
+  position: relative;
+}
+
+.top-header-nav li:first-child a::before {
+  content: '';
+  position: absolute;
+  top:0px;
+  right:81px;
+  width: 26px;
+  height: 32px;
+  background-image: url("../img/icon-place.png");
+}
+
+.top-header-nav li:last-child a::before {
+  content: '';
+  position: absolute;
+  top:0px;
+  right:130px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon-phone.png");
+}
+
+
+.top-header-nav li:last-child {
+  padding-left: 116px;
+    padding-right: 100px;
+}
+
+.top-header-nav a {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color:#2b2929;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+input[type=search] {
+  width: 100px;
+  float: right;
+  outline: none;
+  border:none;
+  background-color: transparent;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color:#2b2929;
+  text-decoration: none;
+  font-weight: 400;
+  padding-bottom: 0;
+  padding-top: 41px;
+  margin-right: 18px;
+  background-image: url("../img/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 58px 40px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=search]:focus {
+  width: 120px;
+  margin-right: 0;
+}
+
+
+
+/*Вторая шапка*/
+.middle-header {
+  background-color: #2b2929;
+}
+
+.middle-header-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.middle-header-nav li {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  padding-left: 3px;
+  padding-right:55px;
+
+}
+
+.middle-header-nav li a {
+  position: relative;
+  text-transform: uppercase;
+  color:#ffffff;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-decoration: none; 
+}
+
+.middle-header-nav li a:hover{
+  color:#fcf63a;
+}
+
+.nav-img_basket {
+  position: absolute;
+  top:19px;
+  left: 21px;
+}
+
+.nav-img_user {
+  position: absolute;
+      top: 19px;
+    left: 30px;
+}
+
+
+/*Основное содержание*/
+
+.item-page {
+  margin-top: 44px;
+  margin-bottom: -29px;
+}
+
+.breadcrumbs a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #2b2929;
+  font-size: 13px;
+  margin-right: 15px;
+}
+
+.breadcrumbs a:last-child {
+  color:#939393;
+}
+
+.link-main-page::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  background-image: url("../img/icon-nav.png");
+  top: 8px;
+  left: 52px;
+}
+
+.link-catalog-page::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  background-image: url("../img/icon-nav.png");
+  top: 8px;
+  left: 78px;
+}
+
+.breadcrumbs a:hover {
+  color:#75ae9a;
+}
+
+.breadcrumbs a:last-child:hover {
+  color:#939393; 
+}
+
+
+.item-card {
+  margin-top: 50px;
+}
+
+.item-title_big {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:#2b2929;
+  margin: 0;
+  padding: 0;
+}
+
+.item-service-info {
+  margin-top: 39px;
+  margin-bottom: 34px;
+}
+
+.item-article {
+  font-size: 15px;
+}
+
+.item-share {
+  position: relative;
+  border:1px solid #cccccc;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 3px 5px;
+  padding-left: 18px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 30px;
+  white-space: pre;
+  
+}
+
+.item-share::before {
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 17px;
+  background-image: url("../img/icon-share.png");
+  top: 2px;
+  left: 2px;
+}
+
+.item-share::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 21px;
+  background-color: #cccccc;
+  top: 0px;
+  left: 96px;
+}
+
+
+
+
+.item-share:active {
+  border:1px solid #2b2929;
+  outline: none;
+}
+
+.item-share:hover {
+  color:#75ae9a;
+}
+
+
+/*Изображения товара*/
+
+.item-images {
+  position: relative;
+  border:1px solid #e8e8e8;
+  width: 870px;
+  height: 518px;
+  float: left;
+}
+
+.item-img-nav {
+  position: relative;
+  width: 170px;
+  display: block;
+  padding-left: 20px;
+  padding-top: 18px;
+  /*z-index: 1000;*/
+ }
+
+.item-img-nav img {
+  border:1px solid transparent;
+}
+
+.item-img-nav img:hover {
+  border:1px solid black;
+}
+
+.active-img {
+  display: block;
+  position: absolute;
+  float: right;
+  left: 79px;
+  top: 42px;
+}
+
+.hidden-img {
+  display: none;
+  position: absolute;
+  float: right;
+  left: 75px;
+  top: 37px;
+}
+
+
+.show-image {
+  display: block;
+}
+
+.close-image {
+  display: none;
+}
+
+
+/*Описание товара*/
+
+.item-description {
+  float: right;
+  width: 270px;
+  margin-right: 28px;
+}
+
+.item-description span {
+  display: block;
+}
+
+.item-title_small {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  margin-top: -7px;
+}
+
+.item-price {
+  text-transform: uppercase;
+  font-size:24px;
+  font-weight: 700;
+  color:#2b2929;
+  margin-top: 17px;
+}
+
+.avail {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b8b8b8;
+  margin-left: 38px;
+  margin-top: 25px;
+}
+
+.avail::before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/icon-avail.png");
+  left: -39px;
+  top: -6px;
+}
+
+.item-buy {
+  background-color: #fff600;
+  outline: none;
+  border:none;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  color:#2b2929;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 104px;
+  margin-top: 25px;
+  border:2px solid transparent;
+  cursor: pointer;
+}
+
+.item-buy:hover {
+  background-color: #ffffff;
+  border:2px solid #fcf63a;
+}
+
+.item-buy_fast {
+  background-color: #ffffff;
+  outline: none;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  color:#2b2929;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 62px;
+  margin-top: 12px;
+  border:2px solid #fcf63a;
+  cursor: pointer;
+}
+
+.item-buy_fast:hover {
+  border:2px solid transparent;
+  background-color: #fff600;
+}
+
+.item-description-text {
+  font-size:15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+
+/*Сервисы*/
+.item-services {
+  width: 870px;
+  margin-bottom: 80px;
+}
+
+.service-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+  height: 150px;
+  margin-right:25px; 
+}
+
+.item-service {
+  margin-right: 0;
+}
+
+.item-delivery {
+  background-image: url("../img/slide-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 3px 56px;
+}
+
+.item-delivery::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 13px;
+  background-image: url("../img/icon-logo.png");
+  top: 80px;
+  left: 10px;
+}
+
+.item-service-title:hover {
+  opacity: 0.8;
+}
+
+.item-guarantee {
+  background-image: url("../img/slide-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 30px 56px;
+}
+
+.item-service {
+  background-image: url("../img/slide-service.png");
+  background-repeat: no-repeat;
+  background-position: 37px 56px;
+}
+
+.item-service-title {
+  font-weight: 500;
+  font-size: 15px;
+  position: absolute;
+  top: 83px;
+}
+
+.title-delivery {
+  left:148px;
+}
+
+.title-guarantee {
+  left:105px;
+}
+
+.title-service {
+  left: 135px;
+}
+
+
+
+
+
+
+/*Характеристики*/
+
+/*Слайдер*/
+
+.item-charact-slider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-charact-slider li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 79px;
+  border-bottom:5px solid #d7d7d7;
+  margin-right: 2px;
+}
+
+.item-charact-slider li:last-child {
+  margin-right: 0;
+}
+
+.item-charact-slider li:active {
+  border-bottom:5px solid #2b2929;
+}
+
+.slider-control {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.slider-control:hover {
+  color: #75ae9a;
+}
+
+.slider-wrapper {
+  background-color: #f7f7f7;
+  margin-top: 0px;
+  padding-bottom: 71px;
+}
+
+.charact-list {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding:0;
+  width: 300px;
+
+}
+
+.charact-list-about {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding:0;
+  width: 500px;
+  margin-right: 298px;
+}
+
+.charact-slide {
+      padding-top: 46px;
+}
+
+.charact-list-title {
+  margin-bottom: 21px;
+}
+
+.details-charact {
+      margin-top: 50px;
+}
+
+.details-title {
+  margin-bottom: 20px;
+}
+
+.wheels-charact {
+      margin-top: 50px;
+}
+
+
+.fake-slide-page {
+  position: relative;
+  display: none;
+  width: 1170px;
+  height: 755px;
+  background-image: url("../img/doge.jpg");
+}
+
+.fake-slide-page span {
+  position: absolute;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 48px;
+  color:#ffffff;
+  top: 54px;
+  left: 32px;
+  font-weight: 700;
+}
+
+.avail-slide {
+  position: relative;
+  display: none;
+  width: 1170px;
+  height: 755px;
+  background-image: url("../img/doge-2.jpg");
+}
+
+.avail-slide span {
+  position: absolute;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 48px;
+  color:#ffffff;
+  top: 54px;
+  left: 32px;
+  font-weight: 700;
+}
+
+.reviews-slide {
+  position: relative;
+  display: none;
+  width: 1170px;
+  height: 755px;
+  background-image: url("../img/doge-3.jpg");
+}
+
+.reviews-slide span {
+  position: absolute;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 48px;
+  color:#ffffff;
+  top: 54px;
+  left: 32px;
+  font-weight: 700;
+}
+
+
+.show-slide {
+  display: block;
+}
+
+.close-slide {
+  display: none;
+}
+
+
+
+
+/*Аксессуары*/
+
+.accessories {
+  margin-top: 116px;
+  margin-bottom: 95px;
+}
+
+.access-items-headline {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.2px;
+}
+
+
+.disclaimer {
+  width: 256px;
+  height: 406px;
+  border:7px solid #50b09b;
+  position: relative;
+  background-image: url("../img/disclaimer-img.png");
+  background-repeat: no-repeat;
+  background-position: 61px 50px;
+  float: left;
+}
+
+.disclaimer-text {
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  top:249px;
+  left: 2px;
+  padding-left: 20px;
+}
+
+
+.disclaimer-link {
+  text-decoration: none;
+  color: #939393;
+}
+
+.disclaimer-link:hover {
+  color:#75ae9a;
+}
+
+.access-items-list {
+  margin-top: 78px;
+  margin-bottom: 103px;
+}
+
+.item {
+  width: 270px;
+  height: 415px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+}
+
+.item:hover {
+  outline-left: 1px solid pink;
+}
+
+.item span {
+  display: block;
+}
+
+.item_img {
+  height:190px;
+  width: 270px;
+}
+
+.item_img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.item_details {
+  margin-top: 5px;
+}
+
+.item_model {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+}
+
+.item_title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 6px;
+  height: 24px;
+}
+
+.item_priceblock {
+  margin-top: 37px;
+}
+
+.item_price {
+  text-transform: uppercase;
+  font-size:24px;
+  font-weight: 700;
+  color:#2b2929;
+}
+
+.item-avail {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b8b8b8;
+  margin-left: 41px;
+}
+
+.availability {
+  margin-top: 23px;
+}
+
+.item-avail::before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/icon-avail.png");
+  top: -6px;
+  left: -39px;
+}
+
+.item-buy-btn {
+  background-color: #fff600;
+  outline: none;
+  border:none;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  color:#2b2929;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 104px;
+  border:2px solid transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+}
+
+.item-buy-btn:hover {
+  background-color: #ffffff;
+  border:2px solid #fcf63a;
+}
+
+.access-item .item:first-child {
+  margin-left: 33px;
+}
+
+
+/*Похожие товары*/
+
+.similar-items-headline {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.2px;
+}
+
+.similar-items-list {
+  margin-top: 48px;
+}
+
+.similar-item {
+  display: inline-block;
+  margin-left: 26px;
+}
+
+.similar-item:first-child {
+  margin-left: 0;
+}
+
+
+.similar-item .item_img {
+  width: 270px;
+  height: 200px;
+}
+
+
+
+/*Соцсети*/
+
+.socials {
+  background-color: #2b2929;
+  min-height: 70px;
+}
+
+.socials-block {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+.socials-cta span {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  color: #939393;
+  display: block;
+  width: 270px;
+}
+
+.socials-headline {
+  margin-left: 37px;
+}
+
+.socials-headline h1 {
+  margin:0;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.social-links-list {
+  margin-left: 71px;
+}
+
+.social-link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+.link-vk {
+  width: 40px;
+  height: 40px;
+  background-image:url("../img/icon-vk.png");
+  background-repeat: no-repeat;
+}
+
+
+.link-fb {
+  width: 40px;
+  height: 40px;
+  background-image:url("../img/icon-fb.png");
+  background-repeat: no-repeat;
+  margin-left: 36px;
+}
+
+.link-ok {
+  width: 40px;
+  height: 40px;
+  background-image:url("../img/icon-ok.png");
+  background-repeat: no-repeat;
+  margin-left: 26px;
+}
+
+.link-ig {
+  width: 40px;
+  height: 40px;
+  background-image:url("../img/icon-ig.png");
+  background-repeat: no-repeat;
+  margin-left: 18px;
+}
+
+
+/*Футер*/
+footer {
+  margin-top: 113px;
+}
+
+
+
+.footer-nav {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-goods {
+  margin-left: 0;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.nav-list li {
+  padding-bottom: 20px;
+}
+
+.nav-list a {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-services {
+  margin-left: 122px;
+}
+
+.footer-others {
+  margin-left: 79px;
+}
+
+.nav-list a:hover {
+  color: #75ae9a;
+}
+
+.footer-payment {
+  position: relative;
+  margin-left: 58px;
+}
+
+.footer-payment span {
+  display: block;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-payment a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-style: italic;
+  color: #939393;
+  font-size: 15px;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.footer-payment a:hover {
+  color: #75ae9a;
+}
+
+.footer-payment img {
+  display: block;
+    margin-top: 33px;
+}
+
+.contacts-list a {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 
+}
+
+.footer-contacts {
+  margin-left: 163px;
+}
+
+.footer-contacts li {
+  padding-bottom: 29px;
+}
+
+.contacts-list .city::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 32px;
+  background-image: url("../img/icon-place.png");
+  top: -3px;
+  left: -46px;
+}
+
+.contacts-list .phone::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon-phone.png");
+  top: -3px;
+    left: -49px;
+}
+
+.footer-copyright {
+  float: right;
+  margin-right: 117px;
+  margin-top: -23px;
+}
+
+
+/*Модальные окна
+Быстрая покупка*/
+
+.modal-buy {
+  display: none;
+  z-index: 1000;
+  width: 400px;
+  min-height: 430px;
+  position: absolute;
+  left: 35%;
+  top:35%;
+  background-color: #ffffff;
+  border:1px solid #2b2929;
+  border-radius: 2px;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 50px;
+}
+
+.modal-title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.modal-buy-form input {
+  width:393px;
+  height: 36px;
+  border:1px solid #2b2929;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  color:#2b2929;
+  padding-left: 5px;
+}
+
+.modal-buy-form input:focus,
+.modal-buy-form textarea:focus {
+  outline: none;
+  background-color: #f7f7f7;
+}
+
+
+.modal-buy-form textarea {
+  width: 391px;
+  border:1px solid #2b2929;
+  min-height: 154px;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  color:#2b2929;
+  padding-left: 5px;
+}
+
+.modal-send-btn {
+  background-color: #fff600;
+  outline: none;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  color:#2b2929;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 91px;
+  border:2px solid transparent;
+  cursor: pointer;
+}
+
+.modal-send-btn:hover {
+  background-color: #ffffff;
+  border:2px solid #fcf63a;
+}
+
+.modal-close {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/close-btn.png");
+  cursor: pointer;
+  border:none;
+  outline: none;
+  background-color: transparent;
+  top: 13px;
+  right: 13px;
+}
+
+.modal-close:hover {
+  opacity: 0.8;
+}
+
+.show-modal {
+  display: block;
+  animation:bounce 0.7s;
+}
+
+.show-overlay {
+  display: block;
+}
+
+
+@keyframes bounce {
+
+  50%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/*окно корзины*/
+
+.modal-basket {
+    width: 550px;
+    min-height: 378px;
+    border: 1px solid #2b2929;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    left: 35%;
+    top: 35%;
+    padding-left: 38px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: none;
+}
+
+.bought-item {
+  margin-bottom: 30px;
+}
+
+.bought-img-box {
+  float: left;
+  width:280px;
+  margin-top: 10px;
+}
+
+.bought-item-about {
+  width: 249px;
+  float: right;
+  margin-top: 24px;
+}
+
+.bought-item-title {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bought-item-price {
+  text-transform: uppercase;
+  font-size:24px;
+  font-weight: 700;
+  color:#2b2929;
+  margin-top: 17px;
+}
+
+.bought-item-about span {
+  display: block;
+}
+
+.modal-action-buttons {
+  width: 560px;
+  height: 53px;
+}
+
+.open-basket-page {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff600;
+  outline: none;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  text-transform: uppercase;
+  color:#2b2929;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 14px 60px;
+  border:2px solid transparent;
+  cursor: pointer;
+}
+
+.open-basket-page:hover {
+  background-color: #ffffff;
+  border:2px solid #fcf63a;
+}
+
+.buy-more-btn {
+    display: inline-block;
+    margin-left: 13px;
+    background-color: #ffffff;
+    outline: none;
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #2b2929;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 9px 46px;
+    border: 2px solid #fcf63a;
+    cursor: pointer;
+}
+
+.buy-more-btn:hover {
+  border:2px solid transparent;
+  background-color: #fff600;
+}
+
+.show-modal-basket {
+  display: block;
+  animation:bounce 0.7s;
+
+}
+
+.sale-item_price {
+  display: block;
+  position: absolute;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  color:#2b2929;
+  text-decoration: line-through;
+}
+
+.item-sale .item_price {
+  margin-left: 86px;
+}
