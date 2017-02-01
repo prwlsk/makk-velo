@@ -1,4 +1,4 @@
-// Слайдер с табами
+// // Слайдер с табами
 
 		var openGuide = document.querySelector(".guide-control");
 		var showGuide = document.querySelector("#fake-slide-page");
@@ -46,7 +46,7 @@
 		});
 
 
-		// Галерея велосипедов
+// 		// Галерея велосипедов
 		var openImg1 = document.querySelector(".img-link-1");
 	var showImg1 = document.querySelector(".active-img");
 	var openImg2 = document.querySelector(".img-link-2");
@@ -67,7 +67,7 @@
 	})
 
 
-// Быстрая покупка
+// // Быстрая покупка
 
 	var openModalBuy = document.querySelector(".item-buy_fast");
 	var showModalBuy = document.querySelector(".modal-buy"); 
@@ -102,39 +102,58 @@
 
 // Добавление в корзину
 
-		var openModalBasket = document.querySelector(".item-buy");
-		var showModalBasket = document.querySelector(".modal-basket");
-		var closeModalBasket = showModalBasket.querySelector(".modal-close");
-		var buyMore = document.querySelector(".buy-more-btn");
+		var openModalBasket = document.querySelectorAll(".item-buy");
+		var showModalBasket = document.querySelectorAll(".modal-basket");
+		var closeModalBasket = document.querySelectorAll(".modal-close");
+		var buyMore = document.querySelectorAll(".buy-more-btn");
+		var overlay = document.querySelector(".overlay");
 
-		openModalBasket.addEventListener("click", function(event) {
-			showModalBasket.classList.add("show-modal-basket");
-			overlay.classList.add("show-overlay");
-		});
+		for(var i = 0; i < openModalBasket.length; i++){
+  			openModalBasket[i].addEventListener("click", function(event) {
+    			event.preventDefault();
+    			showModalBasket[0].classList.add("show-modal-basket");
+   		 		overlay.classList.add("show-overlay");
+  			});
+		};
 
-		closeModalBasket.addEventListener("click", function(event) {
+		for(var i = 0; i < closeModalBasket.length; i++){
+  			closeModalBasket[i].addEventListener("click", function(event) {
+   				event.preventDefault();
+    			showModalBasket[0].classList.remove("show-modal-basket");
+    			overlay.classList.remove("show-overlay");
+ 		 	});
+		};
+
+		for(var i = 0; i < buyMore.length; i++){
+  			buyMore[i].addEventListener("click", function(event) {
+   				event.preventDefault();
+    			showModalBasket[0].classList.remove("show-modal-basket");
+    			overlay.classList.remove("show-overlay");
+ 		 	});
+		};
+
+		for(var i = 0; i < overlay.length; i++){
+  			overlay[i].addEventListener("click", function(event) {
+   				event.preventDefault();
+    			showModalBasket[0].classList.remove("show-modal-basket");
+    			overlay.classList.remove("show-overlay");
+ 		 	});
+		};
+
+
+		// Модальное меню
+
+		var openMenu = document.querySelector(".menu_burger");
+		var showMenu = document.querySelector(".adaptive_menu");
+		var closeMenu = document.querySelector(".close-menu_btn");
+		var overlay = document.querySelector(".overlay");
+
+		openMenu.addEventListener("click", function(event) {
 			event.preventDefault();
-			showModalBasket.classList.remove("show-modal-basket");
-			overlay.classList.remove("show-overlay");
-		});
-
-		overlay.addEventListener("click", function(event) {
-			showModalBasket.classList.remove("show-modal-basket");
-			overlay.classList.remove("show-overlay");
-		});
-
-		window.addEventListener("keydown", function(event) {
-			if (event.keyCode === 27) {
-				if (showModalBasket.classList.contains("show-modal-basket")) {
-					showModalBasket.classList.remove("show-modal-basket");
-					overlay.classList.remove("show-overlay");
-				}
-			}
-		});
-
-		buyMore.addEventListener("click", function(event) {
-			event.preventDefault();
-			showModalBasket.classList.remove("show-modal-basket");
-			overlay.classList.remove("show-overlay");
+			showMenu.classList.add("show-adaptive-menu");
 		})
 
+		closeMenu.addEventListener("click", function(event) {
+			event.preventDefault();
+			showMenu.classList.remove("show-adaptive-menu");
+		})

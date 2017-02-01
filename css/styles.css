@@ -1345,6 +1345,30 @@ footer {
 }
 
 
+@keyframes appearing {
+
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0;
+  }
+  
+}
+
+@keyframes falling {
+
+  0% {
+    top: -240px;
+  }
+  100% {
+    top: 0;
+  }
+  
+}
+
+
+
 /*окно корзины*/
 
 .modal-basket {
@@ -1467,3 +1491,6 @@ footer {
   display: none;
 }
 
+.adaptive_menu {
+  display: none;
+}

@@ -27,6 +27,7 @@
 			<input type="search" name="search" id="search" placeholder="Поиск">
 		</div>
 	</header>
+
 	<header class="adaptive-header">
 		<div class="adaptive_header-logo">
 			<a class="adaptive-header-link" href="#">
@@ -34,6 +35,7 @@
 			</a>
 		</div>
 	</header>
+
 	<header class="middle-header">
 		<div class="container clearfix">
 			<ul class="middle-header-nav">
@@ -68,9 +70,9 @@
 			</ul>
 		</div>
 	</header>
+
 	<header class="adaptive_middle_header">
-		<a href="#">
-			<img class="adaptive_burger" src="img/icon-burger.png" width="30" height="26" alt="menu">
+		<a class="menu_burger" href="#">
 		</a>
 		<a href="#">
 			<img class="adaptive_search" src="img/icon-search_inversion.png" width="30" height="32" alt="search">
@@ -81,8 +83,42 @@
 		<a href="#">
 			<img class="adaptive_user" src="img/icon-user.png" width="28" height="32" alt="user">
 		</a>
-
 	</header>
+
+	<div class="adaptive_menu">
+		<div class="container">
+			<ul class="adaptive-menu_nav middle-header-nav">
+				<a class="close-menu_btn" href="#"></a>
+				<li>
+					<a href="#">Велосипеды</a>
+				</li>
+				<li>
+					<a href="#">Запчасти</a>
+				</li>
+				<li>
+					<a href="#">Аксессуары</a>
+				</li>
+				<li>
+					<a href="#">Сервис</a>
+				</li>
+				<li>
+					<a href="#">Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<ul class="adaptive_contact-list nav-list contacts-list">
+					<li>
+						<a class="city" href="#">Барнаул</a>
+					</li>
+					<li>
+						<a class="phone">8 800 700 52 90</a>
+					</li>
+				</ul>
+		</div>
+	</div>
+
 	<main class="item-page">
 		<div class="container clearfix">
 			<div class="breadcrumbs">
@@ -141,6 +177,7 @@
 			</div>
 		</div>
 	</main>
+
 	<div class="item-charact">
 		<div class="container">
 			<ul class="item-charact-slider">
@@ -276,6 +313,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="accessories">
 		<div class="container clearfix">
 		<h1 class="access-items-headline item-list-headline">Необходимые аксессуары</h1>
@@ -298,7 +336,7 @@
 								<span class="item-avail">Есть в наличии</span>
 							</div>
 						</div>
-						<button class="item-buy-btn" type="button">Купить</button>
+						<button class="item-buy" type="button">Купить</button>
 					</div>
 					<div class="access-item item">
 						<div class="item_img">
@@ -314,7 +352,7 @@
 								<span class="item-avail">Есть в наличии</span>
 							</div>
 						</div>
-						<button class="item-buy-btn" type="button">Купить</button>
+						<button class="item-buy" type="button">Купить</button>
 					</div>
 					<div class="access-item item">
 						<div class="item_img">
@@ -330,7 +368,7 @@
 								<span class="item-avail">Есть в наличии</span>
 							</div>
 						</div>
-						<button class="item-buy-btn" type="button">Купить</button>
+						<button class="item-buy" type="button">Купить</button>
 					</div>
 				</div>
 			</div>
@@ -407,6 +445,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="socials">
 		<div class="container clearfix">
 			<div class="socials-cta socials-block">
@@ -423,6 +462,7 @@
 			</div>
 		</div>
 	</div>
+
 	<footer>
 		<div class="container clearfix">
 			<div class="footer-nav footer-goods">
@@ -529,6 +569,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<div class="modal-buy"> 
 		<h3 class="modal-title">Быстрая покупка</h3>
 		<form class="modal-buy-form" action="https://echo.htmlacademy.ru" method="post">
@@ -539,6 +580,7 @@
 			<button class="modal-close"  type="button"></button>
 		</form>
 	</div>
+
 	<div class="modal-basket">	
 		<h3 class="modal-title">1 товар добавлен в корзину</h3>
 		<form class="modal-basket-form" action="https://echo.htmlacademy.ru" method="post">
@@ -558,7 +600,9 @@
 			<button class="modal-close"  type="button"></button>
 		</form>
 	</div>
+
 	<script src="js/script.js"></script>
+
 	</body>
 </html>
 

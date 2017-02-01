@@ -248,7 +248,82 @@ footer {
 }
 
 .charact-list {
-
     width: 100%;
     max-width: 300px;
 }
+
+.adaptive_menu {
+  display: none;
+  background-color: #2b2929;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.adaptive-menu_nav li {
+  display: block;
+  padding-bottom: 0;
+}
+
+.adaptive-menu_nav  {
+margin-bottom: 100px;
+}
+
+.adaptive_contact-list li a {
+  color: #636262;
+  margin-left: 50px;
+
+}
+
+.adaptive_contact-list li {
+    margin-bottom: 25px;
+    padding-bottom: 0;
+  }
+
+
+.adaptive_contact-list .city::before {
+  background-image: url("../img/icon-place_light.png");
+}
+
+.adaptive_contact-list .phone::before {
+  background-image: url("../img/icon-phone_light.png");
+}
+
+.close-menu_btn {
+  position: relative;
+  display: block;
+}
+
+.close-menu_btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.png");
+  left: 245px;
+  top: -20px;
+}
+
+.show-adaptive-menu {
+  display: block;
+  animation: appearing .3s;
+}
+
+.menu_burger {
+  position: relative;
+}
+
+.menu_burger::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 26px;
+  background-image: url("../img/icon-burger.png");
+      top: -14px;
+    left: -9px;
+}
+
+
+
