@@ -4,11 +4,12 @@
 	<title>Велосипед Totem 26-122</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="css/adaptive.css" type="text/css">
 	<link href="http://webfonts.ru/import/clearsans.css" rel="stylesheet">
 	<link href="http://webfonts.ru/import/sourcesans.css" rel="stylesheet">
 	<link href="http://webfonts.ru/import/bebasneue.css" rel="stylesheet">
 </head>
-<body>
+<body class="clearfix">
 	<div class="overlay"></div>
 	<header class="top-header">
 		<div class="container clearfix">
@@ -24,6 +25,13 @@
 				</li>
 			</ul>
 			<input type="search" name="search" id="search" placeholder="Поиск">
+		</div>
+	</header>
+	<header class="adaptive-header">
+		<div class="adaptive_header-logo">
+			<a class="adaptive-header-link" href="#">
+				<img src="img/top-header_logo.png" width="200" height="46" alt="logo">
+			</a>
 		</div>
 	</header>
 	<header class="middle-header">
@@ -60,6 +68,21 @@
 			</ul>
 		</div>
 	</header>
+	<header class="adaptive_middle_header">
+		<a href="#">
+			<img class="adaptive_burger" src="img/icon-burger.png" width="30" height="26" alt="menu">
+		</a>
+		<a href="#">
+			<img class="adaptive_search" src="img/icon-search_inversion.png" width="30" height="32" alt="search">
+		</a>
+		<a href="#">
+			<img class="adaptive_basket" src="img/icon-basket.png" width="30" height="32" alt="basket">
+		</a>
+		<a href="#">
+			<img class="adaptive_user" src="img/icon-user.png" width="28" height="32" alt="user">
+		</a>
+
+	</header>
 	<main class="item-page">
 		<div class="container clearfix">
 			<div class="breadcrumbs">
@@ -86,6 +109,13 @@
 						<div class="item-img_big">
 							<img class="active-img" src="img/item-img-big.png" width="716" height="433" alt="totem-bike-big">
 							<img class="hidden-img" src="img/item-img-big-2.png" width="716" height="433" alt="totem-bike-big">
+						</div>
+					</div>
+					<div class="adaptive-images">
+						<img class="adaptive-img_big" src="img/item-img-big.png" width="100%">
+						<div class="small_images">
+							<img class="adaptive-img_small" src="img/item-img-big.png" width="45%" height="45%">
+							<img class="adaptive-img_small" src="img/item-img-big-2.png" width="45%" height="45%">
 						</div>
 					</div>
 					<div class="item-description">
@@ -192,6 +222,7 @@
 							<li>металл</li>
 						</ul>
 					</div>
+
 				</div>
 				<div id="fake-slide-page" class="fake-slide-page">
 					<span>Здесь пока ничего нет. Вот вам пёсель.</span>
@@ -199,8 +230,48 @@
 				<div id="avail-slide" class="avail-slide">
 					<span>И тут тоже пёсель.</span>
 				</div>
-				<div id="reviews-slide" class="reviews-slide">
-					<span>Восхитительный пёсель!</span>
+				<div id="reviews-slide" class="reviews-slide clearfix">
+					
+					<div class="item-rating">
+						<h3 class="rating-title">Рейтинг товара</h3>
+						<p class="rating-stars"><b>5.0</b></p>
+						<button type="button" class="show-all-rating">Показать все отзывы</button>
+						<p class="rating_five">10 отзывов</p>
+						<p class="rating_four">12 отзывов</p>
+						<p class="rating_three">2 отзыва</p>
+						<p class="rating_two">нет отзывов</p>
+						<p class="rating_one">нет отзывов</p>
+						<button class="item-buy leave_review">Оставить отзыв</button>
+					</div>
+					<div class="reviews_list">
+						<div class="review_item">
+							<p class="review_date">27//05//2016</p>
+							<p class="review_username">Семен, г.Рубцовск</p>
+							<p class="review_rating"><img src="img/icon-rate_five.png"> <span>Отличный товар</span></p>
+							<p class="review_subtitle">Достоинства</p>
+							<p class="review_text">Дешевый велосипед, катаюсь 3 года везде причем, легкий и быстрый. 21 скорость сегодня меняли камеры все снимается без ключа.</p>
+							<p class="review_subtitle">Недостатки</p>
+							<p class="review_text">Педаль маленько треснула как и у многих и задний щеток отвалился, и по мелочи ручка малех выехала, но это не беда сделаю и ножка расшаталась , но то же не проблема там поткрутить просто надо</p>
+							<p class="review_subtitle">Комментарий</p>
+							<p class="review_text">Всем советую!</p>
+						</div>
+						<div class="review_item">
+							<p class="review_date">27//05//2016</p>
+							<p class="review_username">Семен, г.Рубцовск</p>
+							<p class="review_rating"><img src="img/icon-rate_five.png"> <span>Отличный товар</span></p>
+							<p class="review_subtitle">Достоинства</p>
+							<p class="review_text">Дешевый велосипед, катаюсь 3 года везде причем, легкий и быстрый. 21 скорость сегодня меняли камеры все снимается без ключа.</p>
+							<p class="review_subtitle">Недостатки</p>
+							<p class="review_text">Педаль маленько треснула как и у многих и задний щеток отвалился, и по мелочи ручка малех выехала, но это не беда сделаю и ножка расшаталась , но то же не проблема там поткрутить просто надо</p>
+							<p class="review_subtitle">Комментарий</p>
+							<p class="review_text">Всем советую!</p>
+						</div>
+						<div class="review-nav-buttons">
+							<button class="reviews-left review-button"></button>
+							<button class="reviews-right review-button"></button>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -403,6 +474,43 @@
 				<span>Принимаем к оплате</span>
 				<a href="#">Еще</a>
 				<img src="img/icon-payment.png" width="252" height="44">
+			</div>
+			<div class="adaptive_footer-nav footer-goods">
+				<ul class="nav-list goods-list">
+					<li>
+						<a href="#">Велосипеды</a>
+					</li>
+					<li>
+						<a href="#">Запчасти</a>
+					</li>
+					<li>
+						<a href="#">Аксессуары</a>
+					</li>
+					<li>
+						<a href="#">Сервис</a>
+					</li>
+					<li>
+						<a href="#">Доставка и оплата</a>
+					</li>
+					<li>
+						<a href="#">Видеообзоры</a>
+					</li>
+					<li>
+						<a href="#">Помощь</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li>
+						<a href="#">Отзывы</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Оптовым покупателям</a>
+					</li>
+				</ul>
 			</div>
 			<div class="footer-nav footer-contacts">
 				<ul class="nav-list contacts-list">

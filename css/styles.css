@@ -33,8 +33,21 @@ body {
 }
 
 
-/*Верхняя шапка*/
 
+/*адаптивная шапка
+*/
+.adaptive-header {
+  background-color: #fff600;
+  display: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.adaptive_header-logo {
+  width: 200px;
+  margin: 0 auto
+}
+
+/*Верхняя шапка*/
 .top-header {
   background-color: #f7f7f7;
 }
@@ -146,6 +159,20 @@ input[type=search]:focus {
   margin-right: 0;
 }
 
+/*адаптивная вторая шапкпа
+*/
+
+.adaptive_middle_header {
+  background-color: #2b2929;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.adaptive_middle_header a:hover {
+  opacity: .8
+}
 
 
 /*Вторая шапка*/
@@ -257,7 +284,9 @@ input[type=search]:focus {
   color:#2b2929;
   margin: 0;
   padding: 0;
+  line-height: 55px;
 }
+
 
 .item-service-info {
   margin-top: 39px;
@@ -559,7 +588,9 @@ input[type=search]:focus {
 .item-charact-slider li:last-child {
   margin-right: 0;
 }
-
+.adaptive-images {
+  display: none;
+}
 .item-charact-slider li:active {
   border-bottom:5px solid #2b2929;
 }
@@ -662,11 +693,26 @@ input[type=search]:focus {
   position: relative;
   display: none;
   width: 1170px;
-  height: 755px;
-  background-image: url("../img/doge-3.jpg");
+  padding-top: 30px;
+ /* background-image: url("../img/doge-3.jpg");*/
+}
+.reviews_list {
+  float: left;
 }
 
-.reviews-slide span {
+.item-rating {
+  float: right;
+}
+.leave_review {
+  padding: 8px 70px;
+}
+
+.review-nav-buttons {
+  display: none;
+}
+
+
+/*.reviews-slide span {
   position: absolute;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 48px;
@@ -674,7 +720,44 @@ input[type=search]:focus {
   top: 54px;
   left: 32px;
   font-weight: 700;
+}*/
+
+
+/*Стили отзыва*/
+.review_item {
+  width: 700px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e8e8e8;
 }
+.review_date {
+  display: inline-block;
+  background-color: #2b2929;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+.review_username {
+  font-size: 24px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+
+.review_subtitle {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.review_rating img {
+  margin-right: 15px;
+}
+.review_item p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+
 
 
 .show-slide {
@@ -685,8 +768,65 @@ input[type=search]:focus {
   display: none;
 }
 
+/*Рейтинг товара*/
+
+.item-rating p {
+  position: relative;
+  font-size: 15px;
+  color: #939393;
+  margin-left: 120px;
+}
+
+.item-rating p::before {
+    content: '';
+  position: absolute;
+  width: 95px;
+  height: 15px;
+  left: -125px;
+}
+
+.rating-title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.rating-stars::before {
+  background-image: url("../img/icon-rate_five.png");
+
+}
+
+.rating_five::before {
+  background-image: url("../img/icon-rate_five.png");
+}
 
 
+.rating_four::before {
+  background-image: url("../img/icon-rate_four.png")
+}
+
+.rating_three::before {
+  background-image: url("../img/icon-rate_three.png")
+}
+
+.rating_two::before {
+  background-image: url("../img/icon-rate_two.png")
+}
+
+
+.rating_one::before {
+  background-image: url("../img/icon-rate_one.png")
+}
+
+
+.show-all-rating {
+  border:none;
+  outline: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: #939393;
+  cursor: pointer;
+}
 
 /*Аксессуары*/
 
@@ -1321,3 +1461,9 @@ footer {
 .item-sale .item_price {
   margin-left: 86px;
 }
+
+
+.adaptive_footer-nav {
+  display: none;
+}
+
